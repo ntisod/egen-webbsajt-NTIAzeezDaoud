@@ -26,13 +26,13 @@ function circutAnimationIdle(){
 
 function PictureEasterEgg(){
     myPic = document.getElementById("mypic");
-    currentPic = "./bilder/azeezimage.jpg";
+    currentPic = "./bilder/azeezimage-640px.jpg";
     myPic.addEventListener("click", function(){
-        if (currentPic == "./bilder/azeezimage.jpg") {
+        if (currentPic == "./bilder/azeezimage-640px.jpg") {
             currentPic = "./bilder/azeezimagememe-640px.jpg";
             myPic.srcset = currentPic;
         } else {
-            currentPic = "./bilder/azeezimage.jpg";
+            currentPic = "./bilder/azeezimage-640px.jpg";
             myPic.srcset = currentPic;
         }
     })

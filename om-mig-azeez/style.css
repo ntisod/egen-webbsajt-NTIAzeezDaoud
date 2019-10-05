@@ -1,8 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Cardo', serif;
     background-image: url("https://cdn.pixabay.com/photo/2017/02/02/19/44/seamless-2033661_960_720.jpg");
     color: #BBffff;
-    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,15 +18,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav{
-    width: 60%;
-    float: left;
+    height: 150px;
 }
 
 #mypic{
     width: 40%;
     float: left;
 }
-
 
 a{
     text-decoration: none;
@@ -37,6 +37,15 @@ a:hover{
     color: #6666ff;
 }
 
+#innehallsforteckning{
+    float: left;
+    width: 45%;
+}
+
+#innehallsforteckning li{
+    margin-bottom: 5px;
+}
+
 #innehallsforteckning li:hover ,#innehallsforteckning  li:hover a{
     color: #6666ff;
     list-style-type: square;
@@ -47,16 +56,44 @@ a:hover{
     background-color: black;
     margin: 0% 25% 0 25%;
     padding: 20px;
-    text-align: justify;
     border-radius: 2%;
+}
+
+#page p{
+    text-align: justify;
+}
+
+#page li{
+    height: 150%;
+}
+
+#favorit-spel iframe {
+    width: 95%;
+    height: 300px;
+}
+
+#favorit-spel li{
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 800px){
     #page{
-        margin: 0 5% 0 5%;
+        margin: 0 2% 0 2%;
     }
 
-    body{
-        font-size: 24px;
+    #favorit-spel iframe{
+        height: 200px;
     }
 }
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    #page{
+        margin: 0 10% 0 10%;
+    }
+
+    #favorit-spel iframe{
+        height: 350px;
+    }
+}
+
+
