@@ -41,7 +41,7 @@ function PictureEasterEgg(){
 function memeEasterEgg(){
     memeText = document.getElementById("memeEasterEgg");
     memeText.addEventListener("click", function(){
-        window.open("./bilder/azeezmemehtml.jpg");
+        window.open("./bilder/azeezmemehtml-640px.jpg");
     })
 }
 
