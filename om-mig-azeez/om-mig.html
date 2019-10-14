@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 </head>
-    <body>
-        <div id = "page">
+<body>
+    <div id = "page"><!--TL: Undvik div-element. Placera det här id:t i body-elementet istället. -->
         <header>
             <h1 id = "headerTitle">Om Mig - Azeez</h1>
         </header>
@@ -21,12 +21,12 @@
                 <li><a href="#favorit-spel">Favoritspel</a></li>
                 <li><a href="#nti-gymnasiet">NTI Gymnasiet</a></li>
             </ul>
-            <img id="mypic" src="./bilder/azeezimage-640px.jpg" alt="En Bild av Azeez"/>
+            <img id="mypic" src="./bilder/azeezimage-640px.jpg" alt="En Bild av Azeez" />
         </nav>
         <main>
-            <div id="bakgrund">
+            <div id="bakgrund"><!--TL: Ta bort div och placera detta id i ditt h2-element nedan. -->
                 <h2>Bakgrund</h2>
-                <p>Jag heter Azeez Daoud och är en <span id = "ar">17</span>-årig pojke som bor I Södertälje. Jag är född i Iraq den 9 april 2002. År 2008 flyttade jag till Syrien och bodde där i tre år därefter flyttade jag till Sverige. Jag började skolan i årskurs 3 i Ronnaskolan (som är i Ronna), där lärde jag mig svenska. När jag gick ut från årskurs nio så började jag i NTI Gymnasiet Södertälje i Teknik programmet.</p>
+                <p>Jag heter Azeez Daoud och är en <span id = "ar">17</span><!--TL: span bör man också undvika, precis som div. Försök att hitt anågot lämpligt alternativ i första hand. -->-årig pojke som bor I Södertälje. Jag är född i Iraq den 9 april 2002. År 2008 flyttade jag till Syrien och bodde där i tre år därefter flyttade jag till Sverige. Jag började skolan i årskurs 3 i Ronnaskolan (som är i Ronna), där lärde jag mig svenska. När jag gick ut från årskurs nio så började jag i NTI Gymnasiet Södertälje i Teknik programmet.</p>
                 <p>Jag tycker om att programmera, lösa matematiska problem, animera (min ritförmåga är dålig men jag tycker om när bilder och modeller får liv), spela datorspel och <span id = "memeEasterEgg">memes</span>. Min favoritmaträtt är Biryani, som är en ris matträt med kött, grönsaker och massor av kryddor och andra saker. Jag också tycker om potatisbullar och IKEA:s köttbullar (generellt köttbullar är goda men IKEA:s är extra god, tycker jag).</p>
             </div>
         
@@ -39,7 +39,7 @@
             <div id="favorit-spel">
                 <h2>Favoritspel</h2>
                 <ol>
-                    <li>World of Warcraft <br/> <iframe src="https://www.youtube-nocookie.com/embed/jSJr3dXZfcg" allowfullscreen></iframe></li>
+                    <li>World of Warcraft <br/><!--TL: Här kan det faktiskt vara okej med br. --> <iframe src="https://www.youtube-nocookie.com/embed/jSJr3dXZfcg" allowfullscreen></iframe></li>
                     <li>Path of Exile <br/> <iframe src="https://www.youtube-nocookie.com/embed/NDFO4E5OKSE" allowfullscreen></iframe></li>
                     <li>Overwatch <br/> <iframe src="https://www.youtube-nocookie.com/embed/FqnKB22pOC0" allowfullscreen></iframe></li>
                     <li>Yu-Gi-Oh TCG <br/> <iframe src="https://www.youtube-nocookie.com/embed/MDaesFHQgqY" allowfullscreen></iframe></li>
