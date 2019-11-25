@@ -1,7 +1,9 @@
 today = new Date();
 
 function changeToMyCurrentAge(){
-    if (today.getMonth() >= 3) {
+    todaysDate = (today.getMonth() + 1) * 100 + today.getDate();
+    
+    if (todaysDate >= 409) {
         document.getElementById("ar").innerText = today.getFullYear() - 2002;   
     } else {
         document.getElementById("ar").innerText = today.getFullYear() - 2002 - 1;
