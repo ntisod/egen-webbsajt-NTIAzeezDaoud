@@ -1,6 +1,7 @@
-today = new Date();
+today = new Date(); // En instans av Date för att få dagens datum
 
-function changeToMyCurrentAge(){
+
+function changeToMyCurrentAge(){ // Funktionen som den själv säger ändrar en del av ett element till min ålder
     todaysDate = (today.getMonth() + 1) * 100 + today.getDate();
     
     if (todaysDate >= 409) {
@@ -10,14 +11,14 @@ function changeToMyCurrentAge(){
     }
 }
 
-function parallax(){
+function parallax(){ // Parallax metoden ger en parallax effekt för sidan (att bakgrunden går inte med samma hastighet med förgrunden)
     window.addEventListener("scroll", function(){
         let offset = window.pageYOffset;
         document.getElementsByTagName("body")[0].style.backgroundPositionY = -offset*0.2 + "px";
     })
 }
 
-function circutAnimationIdle(){
+function circutAnimationIdle(){ // Metoden tar hand om animationen av kretsbilden i bakgrunden
     animationPosition = 1;
     window.setInterval(() => {
         backgroundY = document.getElementsByTagName("body")[0].style;
@@ -26,7 +27,7 @@ function circutAnimationIdle(){
     }, 1000/60);
 }
 
-function PictureEasterEgg(){
+function PictureEasterEgg(){ // Metoden tar hand om en Easter Egg i "min bild" så att när man trycker på den så ändras den
     myPic = document.getElementById("mypic");
     currentPic = "./bilder/azeezimage-640px.jpg";
     myPic.addEventListener("click", function(){
@@ -40,14 +41,14 @@ function PictureEasterEgg(){
     })
 }
 
-function memeEasterEgg(){
+function memeEasterEgg(){ // Metoden tar hand om en Easter Egg i första stycket (paragraph) där om man trycker på ordet memes så kommer det upp en meme i en ny flik
     memeText = document.getElementById("memeEasterEgg");
     memeText.addEventListener("click", function(){
         window.open("./bilder/azeezmemehtml-640px.jpg");
     })
 }
 
-window.onload = function(){
+window.onload = function(){ // All metoder körs vid (direkt efter) laddningen av sidan
     changeToMyCurrentAge();
     parallax();
     circutAnimationIdle();
