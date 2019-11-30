@@ -11,7 +11,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /*Oswald är en kondenserad och alla bikstäver är versaler. Detta ger en bra intryck för besökare samt är en tydlig beteckning på titlar och headers*/
+    /*Oswald är en kondenserad och alla bokstäver är versaler. Detta ger en bra intryck för besökare samt är en tydlig beteckning på titlar och headers*/
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase; /* Alla bokstäver är stora eftersom alla headers ska vara stora bokstäver (inte alla header-nivåerna har används docks) */
 }
@@ -47,28 +47,22 @@ a:hover{
 
 /* Näst kommande tre regler är för hur navigation bar ser ut (bilden är också innuti nav elementen) */
 nav{
-    height: 15em;
-    display: flex;
-}
-
-nav li{
-    padding-bottom: 1.5em;
+    height: auto;
 }
 
 #mypic{ /* Ett ID används här istället för klass eftersom denna id:et kontrolleras av en Javascript metod som är en Easter Egg */
-    width: 12em;
-    height: 13em;
-    float: right;
+    width: 40%;
+    height: auto;
 }
 
 /* Innehållsförtecknings id:et kontrollerar hur innehållsförteckning och dess innehåll ser ut */
 #innehallsforteckning{
     float: left;
-    width: 45%;
+    width: 40%;
 }
 
 #innehallsforteckning li{
-    margin-bottom: 5px;
+    margin-bottom: 2.4em;
 }
 
 #innehallsforteckning li:hover, #innehallsforteckning  li:hover a{ /* Det är två regler i samma eftersom det ska hamma samma stil men bara att färgen och formen på punkten (bullet) ska ändras */
@@ -101,8 +95,22 @@ Dessutom så är inline frame elementet mer anpassad för en mobilskärm så att
     }
     
     .yt-video-lista iframe{
-        width: 80%;
-        height: 8em;
+        width: 90%;
+        height: auto;
+    }
+    
+    #mypic{
+        width: 100%;
+        height: auto;
+    }
+    
+    #innehallsforteckning{
+        float: left;
+        width: 100%;
+    }
+    
+    #innehallsforteckning li{
+        margin-bottom: 0.5em;
     }
 
 }
@@ -110,5 +118,42 @@ Dessutom så är inline frame elementet mer anpassad för en mobilskärm så att
 @media screen and (min-width: 800px) and (max-width: 1200px){
     #page{
         margin: 0 10% 0 10%;
+    }
+}
+
+@media screen and (min-height: 1000px) and (max-height: 1100px){
+
+    body{
+        font-size: 150%;
+    }
+
+    #page{
+        margin: 0 10% 0 10%;
+    }
+
+    #mypic{
+        width: 40%;
+        height: auto;
+    }
+    
+    #innehallsforteckning{
+        float: left;
+        width: 40%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #mypic{
+        width: 40%;
+        height: auto;
+    }
+    
+    #innehallsforteckning{
+        float: left;
+        width: 40%;
+    }
+
+    #innehallsforteckning li{
+        margin-bottom: 3em;
     }
 }
