@@ -61,10 +61,6 @@ nav{
     width: 40%;
 }
 
-#innehallsforteckning li{
-    margin-bottom: 2.4em;
-}
-
 #innehallsforteckning li:hover, #innehallsforteckning  li:hover a{ /* Det är två regler i samma eftersom det ska hamma samma stil men bara att färgen och formen på punkten (bullet) ska ändras */
     color: #6666ff;
     list-style-type: square; /* Byter punktet i listan med en kvartat */
@@ -154,6 +150,6 @@ Dessutom så är inline frame elementet mer anpassad för en mobilskärm så att
     }
 
     #innehallsforteckning li{
-        margin-bottom: 2.4em;
+        margin-bottom: 2em;
     }
 }
