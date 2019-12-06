@@ -5,15 +5,15 @@
     <title>Om Azeez</title>
     <script src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css"/>
 </head>
-    <body>
-        <div id = "page">
+<body>
+    <div id = "page"> <!--div används för att få bakgrundet bakom hela sidans innehåll-->
         <header>
-            <h1 id = "headerTitle">Om Mig - Azeez</h1>
+            <h1>Om Mig - Azeez</h1>
         </header>
-
+        
         <nav>
             <ul id = "innehallsforteckning">
                 <li><a href="#bakgrund">Bakgrund</a></li>
@@ -21,38 +21,37 @@
                 <li><a href="#favorit-spel">Favoritspel</a></li>
                 <li><a href="#nti-gymnasiet">NTI Gymnasiet</a></li>
             </ul>
-            <img id="mypic" src="./bilder/azeezimage-640px.jpg" alt="En Bild av Azeez"/>
+            <img id="mypic" src="./bilder/azeezimage-640px.jpg" alt="En Bild av Azeez" />
         </nav>
         <main>
-            <div id="bakgrund">
-                <h2>Bakgrund</h2>
-                <p>Jag heter Azeez Daoud och är en <span id = "ar">17</span>-årig pojke som bor I Södertälje. Jag är född i Iraq den 9 april 2002. År 2008 flyttade jag till Syrien och bodde där i tre år därefter flyttade jag till Sverige. Jag började skolan i årskurs 3 i Ronnaskolan (som är i Ronna), där lärde jag mig svenska. När jag gick ut från årskurs nio så började jag i NTI Gymnasiet Södertälje i Teknik programmet.</p>
-                <p>Jag tycker om att programmera, lösa matematiska problem, animera (min ritförmåga är dålig men jag tycker om när bilder och modeller får liv), spela datorspel och <span id = "memeEasterEgg">memes</span>. Min favoritmaträtt är Biryani, som är en ris matträt med kött, grönsaker och massor av kryddor och andra saker. Jag också tycker om potatisbullar och IKEA:s köttbullar (generellt köttbullar är goda men IKEA:s är extra god, tycker jag).</p>
-            </div>
-        
-            <div id="tankar-om-framtiden">
-                <h2>Tankar Om Framtiden</h2>
-                <p>För mig, min framtid ser lite otydlig ut. Jag nu, i andra året i gymnasium, har inte ännu bestämt vad jag ska bli. Det är många val, och många ämne som jag vill lära mig men jag kan inte bestämma vilken som jag kommer att vilja helt och hållet plugga och sedan arbeta med.</p>
-                <p>Jag är optimistisk om framtiden. Mina förhoppningar är att vi, människor, kommer att utveckla det vi har och kunna lösa problemen som vi har idag som klimatproblemen. Inom tekniken så tror jag att AI (Artificiell Intelligens) kommer att ha en stor framgång i de kommande åren. Många arbeten kommer att utföras av datorstyrda maskiner och jag tror inte att de kommer att ta över människans intelligens med nulägets beräkningskraft (alltså datorer), men om kvantdatorer blir mer tillgängliga och välfungerande så kan AI komma väldigt långt.</p>
-            </div>
-        
-            <div id="favorit-spel">
-                <h2>Favoritspel</h2>
-                <ol>
-                    <li>World of Warcraft <br/> <iframe src="https://www.youtube-nocookie.com/embed/jSJr3dXZfcg" allowfullscreen></iframe></li>
-                    <li>Path of Exile <br/> <iframe src="https://www.youtube-nocookie.com/embed/NDFO4E5OKSE" allowfullscreen></iframe></li>
-                    <li>Overwatch <br/> <iframe src="https://www.youtube-nocookie.com/embed/FqnKB22pOC0" allowfullscreen></iframe></li>
-                    <li>Yu-Gi-Oh TCG <br/> <iframe src="https://www.youtube-nocookie.com/embed/MDaesFHQgqY" allowfullscreen></iframe></li>
-                    <li>Magicka <br/> <iframe src="https://www.youtube-nocookie.com/embed/cDj6bjvDiY0" allowfullscreen></iframe></li>
-                </ol>
-            </div>
-        
-            <div id = "nti-gymnasiet">
-                <img src="./bilder/ntilogga.png" alt="nti gymnasiets logga"/>
-                <p>Jag går på <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet Södertälje</a>. Jag valde just NTI Gymnasiet eftersom jag fick höra av en lärare som jobbade i Ronnaskolan att hon hade tidigare arbetat i NTI Gymnasiet. När jag hörde akronymet NTI så tyckte jag om själva namnet. Därefter började söka efter på internet och såg att de hade programm som jag tyckte om, teknik, samt att den låg nära. När det var dags att göra val för gymnasium, hade jag NTI som första val.</p>
-                <p><strong>NTI Gymnasiets adress:</strong> <br/>Sydhamnsvägen 55-57 <br/> 151 38 Södertälje</p>
-            </div>
+            <h2 id="bakgrund">Bakgrund</h2>
+            <p>Jag heter Azeez Daoud och är en <span id = "ar">17</span><!--Span används för uppdatera ålder genom JS autmatiskt när jag fyller år -->-årig pojke som bor I Södertälje. Jag är född i Irak den 9 april 2002. År 2008 flyttade jag till Syrien och bodde där i tre år därefter flyttade jag till Sverige. Jag började skolan i årskurs tre i Ronnaskolan (som är i Ronna), där lärde jag mig svenska. När jag gick ut från årskurs nio så började jag i NTI Gymnasiet Södertälje i Teknik programmet.</p>
+            <p>Jag tycker om att programmera, lösa matematiska problem, animera (min ritförmåga är dålig men jag tycker om när bilder och modeller får liv), spela datorspel och <span id = "memeEasterEgg">memes</span>. Min favoritmaträtt är Biryani, som är en ris matträt med kött, grönsaker och massor av kryddor och andra saker. Jag också tycker om potatisbullar och IKEA:s köttbullar (generellt köttbullar är goda men IKEA:s är extra god, tycker jag).</p>
+    
+            <h2 id="tankar-om-framtiden">Tankar Om Framtiden</h2>
+            <p>För mig, min framtid ser lite otydlig ut. Jag nu, i andra året i gymnasium, har inte ännu bestämt vad jag ska bli. Det är många val, och många ämne som jag vill lära mig men jag kan inte bestämma vilken som jag kommer att vilja helt och hållet plugga och sedan arbeta med.</p>
+            <p>Jag är optimistisk om framtiden. Mina förhoppningar är att vi, människor, kommer att utveckla det vi har och kunna lösa problemen som vi har idag som klimatproblemen. Inom tekniken så tror jag att AI (Artificiell Intelligens) kommer att ha en stor framgång i de kommande åren. Många arbeten kommer att utföras av datorstyrda maskiner och jag tror inte att de kommer att ta över människans intelligens med nulägets beräkningskraft (alltså datorer), men om kvantdatorer blir mer tillgängliga och välfungerande så kan AI komma väldigt långt.</p>
+    
+            <h2 id="favorit-spel">Favoritspel</h2>
+            <ol class = "yt-video-lista">
+                <li>World of Warcraft <br/><!--TL: Här kan det faktiskt vara okej med br. --> <iframe src="https://www.youtube-nocookie.com/embed/s4gBChg6AII" allowfullscreen></iframe></li>
+                <li>Path of Exile <br/> <iframe src="https://www.youtube-nocookie.com/embed/NDFO4E5OKSE" allowfullscreen></iframe></li>
+                <li>Overwatch <br/> <iframe src="https://www.youtube-nocookie.com/embed/FqnKB22pOC0" allowfullscreen></iframe></li>
+                <li>Yu-Gi-Oh TCG <br/> <iframe src="https://www.youtube-nocookie.com/embed/MDaesFHQgqY" allowfullscreen></iframe></li>
+                <li>Magicka <br/> <iframe src="https://www.youtube-nocookie.com/embed/cDj6bjvDiY0" allowfullscreen></iframe></li>
+            </ol>
+    
+            <img src="./bilder/ntilogga.png" alt="nti gymnasiets logga" id="nti-gymnasiet"/>
+            <p>Jag går på <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI Gymnasiet Södertälje</a>. Jag valde just NTI Gymnasiet eftersom jag fick höra av en lärare som jobbade i Ronnaskolan att hon hade tidigare arbetat i NTI Gymnasiet. När jag hörde akronymet NTI så tyckte jag om själva namnet. Därefter började söka efter på internet och såg att de hade programm som jag tyckte om, teknik, samt att den låg nära. När det var dags att göra val för gymnasium, hade jag NTI som första val.</p>
+            <p><strong>NTI Gymnasiets adress:</strong> <br/>Sydhamnsvägen 55-57 <br/> 151 38 Södertälje</p>
         </main>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
     </div>
 </body>
 </html>
