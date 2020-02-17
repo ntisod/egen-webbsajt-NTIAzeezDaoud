@@ -77,6 +77,14 @@ nav{
     height: 20em;
 }
 
+footer{
+    height: 50px;
+}
+
+#csscert{
+    float: right;
+}
+
 /* Nedanstående regler kontrollerar hur sidan ser ut i andra enheter. Den första för dem under 800px i bredd och den andra mellan 800px och 1200px
 Det mesta som är annorlunda är att i mobilen så är page elementet den dominerande och man ser en liten del av bakgrunden till skillnad mot på datorn
 Dessutom så är inline frame elementet mer anpassad för en mobilskärm så att det blir lättare att se och klicka på dem.
