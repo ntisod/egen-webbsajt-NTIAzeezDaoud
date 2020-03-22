@@ -6,20 +6,23 @@ h1,h2,h3,h4,h5,h6{
     font-family: sans-serif;
 }
 main{
-    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 button{
-    width: 4vh;
-    height: 4vh;
+    width: 10vh;
+    height: 10vh;
 }
 
 #result{
-    width: 27.5vh;
+    width: 40vw;
     height: 5vh;
     font-size: 20px;
     border: none;
+}
+
+table{
+    margin-top: 10vh;
 }
 
 button{
@@ -31,4 +34,21 @@ button{
 button:hover{
     background-color: #EEFFFF;
     color: #000000;
+}
+
+@media only screen and (max-width: 850px){
+    button{
+        width: 10vh;
+        height: 12vh;
+    }
+    #result{
+        width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 850px) and (orientation: landscape){
+    button{
+        width: 17vw;
+        height: 10vh;
+    }
 }

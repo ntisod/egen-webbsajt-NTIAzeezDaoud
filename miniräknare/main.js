@@ -1,5 +1,8 @@
 function addToField(str) {
-    document.getElementById("result").value += str;
+    if (document.getElementById("result").value.length < 25) {
+        document.getElementById("result").value += str;
+    }
+    
 }
 
 function clearField() {
