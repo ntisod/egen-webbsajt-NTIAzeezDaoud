@@ -8,10 +8,15 @@ h1,h2,h3,h4,h5,h6{
 main{
     margin: 0 auto;
     text-align: center;
+    width: 100vw;
 }
 button{
+    background-color: #448888;
+    color: white;
+    border: none;
     width: 10vh;
     height: 10vh;
+    font-size: 3em;
 }
 
 #result{
@@ -25,12 +30,6 @@ table{
     margin-top: 10vh;
 }
 
-button{
-    background-color: #448888;
-    color: white;
-    border: none;
-}
-
 button:hover{
     background-color: #EEFFFF;
     color: #000000;
@@ -38,11 +37,12 @@ button:hover{
 
 @media only screen and (max-width: 850px){
     button{
-        width: 10vh;
+        width: 15vw;
         height: 12vh;
+        font-size: 1.5em;
     }
     #result{
-        width: 95vw;
+        width: 70vw;
     }
 }
 
@@ -50,5 +50,6 @@ button:hover{
     button{
         width: 17vw;
         height: 10vh;
+        font-size: 1.5em;
     }
 }
