@@ -38,18 +38,24 @@ button:hover{
 @media only screen and (max-width: 850px){
     button{
         width: 15vw;
-        height: 12vh;
+        height: 10vh;
         font-size: 1.5em;
     }
     #result{
         width: 70vw;
     }
+    table{
+        margin-top: 5vh;
+    }
 }
 
 @media only screen and (max-width: 850px) and (orientation: landscape){
     button{
-        width: 17vw;
-        height: 10vh;
-        font-size: 1.5em;
+        width: 15vw;
+        height: 7vh;
+        font-size: 1em;
+    }
+    table{
+        margin-top: 5vh;
     }
 }
