@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniräknare utan Eval</title>
+    <link rel="stylesheet" href="../miniräknare med eval/style.css">
+    <script src="../miniräknare med eval/main.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Miniräknare utan eval()</h1>
+        
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td colspan="4"><input type="text" name="" id="result" disabled></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addToField(Math.E)">e</button></td>
+                    <td><button onclick="addToField(Math.PI)">pi</button></td>
+                    <td><button onclick="addToField('^')">^</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addToField('(')">(</button></td>
+                    <td><button onclick="addToField(')')">)</button></td>
+                    <td><button onclick="clearField()">C</button></td>
+                    <td><button onclick="deleteLast()"><-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addToField('7')">7</button></td>
+                    <td><button onclick="addToField('8')">8</button></td>
+                    <td><button onclick="addToField('9')">9</button></td>
+                    <td><button onclick="addToField('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addToField('4')">4</button></td>
+                    <td><button onclick="addToField('5')">5</button></td>
+                    <td><button onclick="addToField('6')">6</button></td>
+                    <td><button onclick="addToField('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addToField('1')">1</button></td>
+                    <td><button onclick="addToField('2')">2</button></td>
+                    <td><button onclick="addToField('3')">3</button></td>
+                    <td><button onclick="addToField('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addToField('.')">,</button></td>
+                    <td><button onclick="addToField('0')">0</button></td>
+                    <td><button onclick="evallessCalculate()">=</button></td>
+                    <td><button onclick="addToField('/')">/</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <h1>Method - Rekursiv Beräkning:</h1>
+    <section></section>
+</body>
+</html>
