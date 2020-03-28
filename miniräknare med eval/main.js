@@ -21,13 +21,12 @@ function calculate() {
     result = result.replace(/pi/g, "Math.PI");
     result = result.replace(/√/g, "Math.sqrt");
     result = result.replace(/\^/g, "**");
-    result = eval(result);
-    if (!isNaN(result)) {
-        document.getElementById("result").value = result;
+    try {
+        result = eval(result);
+    } catch (error) {
+        result = "Error";
     }
-    else{
-        document.getElementById("result").value = "Error";
-    }
+    document.getElementById("result").value = result;
 }
 
 function evallessCalculate() {
