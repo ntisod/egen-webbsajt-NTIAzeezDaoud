@@ -21,14 +21,21 @@ function calculate() {
     result = result.replace(/pi/g, "Math.PI");
     result = result.replace(/√/g, "Math.sqrt");
     result = result.replace(/\^/g, "**");
-    console.log(result);
-    document.getElementById("result").value = eval(result);
+    result = eval(result);
+    if (!isNaN(result)) {
+        document.getElementById("result").value = result;
+    }
+    else{
+        document.getElementById("result").value = "Error";
+    }
 }
 
 function evallessCalculate() {
     document.getElementsByTagName("section")[0].innerHTML = " ";
     var result = String(document.getElementById("result").value);
-    document.getElementById("result").value = reCalc(result);
+    result = reCalc(result);
+    
+    
 }
 
 function reCalc(toBeCalculated) {
