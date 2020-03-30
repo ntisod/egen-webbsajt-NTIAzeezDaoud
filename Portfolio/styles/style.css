@@ -1,0 +1,139 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Cardo", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #00FFFF;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  float: right;
+  margin: 0 1em 0 0;
+}
+
+header h1 {
+  margin: 0 0 0 1em;
+  line-height: 14vh;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+main {
+  padding-top: 20vh;
+}
+
+#menu {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 10vh;
+  margin-right: 3px;
+  padding: 3px;
+  list-style-type: none;
+  width: 10vw;
+}
+
+#menu li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.darkCon {
+  background-color: #000000;
+  color: #00FFFF;
+}
+
+.darkCon ul li:hover {
+  background-color: #00FFFF;
+  color: #000000;
+}
+
+.lightCon {
+  background-color: #00FFFF;
+  color: #000000;
+}
+
+.lightCon ul li:hover {
+  background-color: #000000;
+  color: #00FFFF;
+}
+
+.grid-container {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 40vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-container div {
+  border: green 1px solid;
+  height: 30vh;
+  width: 30vh;
+  padding: 5px;
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+}
+
+.grid-container div:hover {
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+}
+
+@media only screen and (max-width: 640px) {
+  .grid-container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    gap: 15vw;
+  }
+  .grid-container div {
+    width: 100px;
+    height: 15vh;
+  }
+  #menu {
+    display: none;
+    top: 10vh;
+    padding: 3px;
+    list-style-type: none;
+    width: 96.5vw;
+  }
+}
+
+@media only screen and (max-width: 850px) and (max-height: 420px) and (orientation: landscape) {
+  .grid-container {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    gap: 10vw;
+  }
+  .grid-container div {
+    width: 30vh;
+    height: 30vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
