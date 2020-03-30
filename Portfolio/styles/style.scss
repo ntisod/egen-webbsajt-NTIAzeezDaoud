@@ -75,12 +75,12 @@ main{
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 40vh;
+    gap: 10vw;
     justify-content: center;
     div{
         border: green 1px solid;
-        height: 30vh;
-        width: 30vh;
+        height: 20vh;
+        width: 20vw;
         padding: 5px;
         transition: ease-in-out 200ms;
     }
@@ -95,6 +95,44 @@ main{
         gap: 15vw;
         div{
             width: 100px;
+            height: 15vh;
+        }
+    }
+
+    #menu{
+        display: none;
+        top: 10vh;
+        padding: 3px;
+        list-style-type: none;
+        width: 96.5vw;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .grid-container{
+        grid-template-columns: auto auto;
+        gap: 15vw;
+        div{
+            width: 30vw;
+            height: 15vh;
+        }
+    }
+
+    #menu{
+        display: none;
+        top: 10vh;
+        padding: 3px;
+        list-style-type: none;
+        width: 96.5vw;
+    }
+}
+
+@media only screen and (max-width: 970px){
+    .grid-container{
+        grid-template-columns: auto auto;
+        gap: 15vw;
+        div{
+            width: 30vw;
             height: 15vh;
         }
     }
