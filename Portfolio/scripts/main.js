@@ -76,7 +76,8 @@ function switchMode() {
 }
 
 function addElements() {
-    var elementsToAdd = ['a', 'b', 'c', 'd', 'b', 'c', 'd', 'b', 'c', 'd', 'b', 'c', 'd'];
+    
+    var elementsToAdd = fetch("./scripts/projects.json").then(results => results.text()).then(JSON.parse);
     
     for (let index = 0; index < elementsToAdd.length; index++) {
         const element = elementsToAdd[index];

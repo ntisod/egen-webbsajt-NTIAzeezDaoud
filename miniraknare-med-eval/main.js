@@ -33,8 +33,7 @@ function evallessCalculate() {
     document.getElementsByTagName("section")[0].innerHTML = " ";
     var result = String(document.getElementById("result").value);
     result = reCalc(result);
-    
-    
+    document.getElementById("result").value = result;
 }
 
 function reCalc(toBeCalculated) {
