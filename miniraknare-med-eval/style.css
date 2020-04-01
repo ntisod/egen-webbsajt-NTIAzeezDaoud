@@ -28,6 +28,9 @@ button{
 
 table{
     margin-top: 10vh;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
 }
 
 button:hover{
