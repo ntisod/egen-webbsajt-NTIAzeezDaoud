@@ -93,12 +93,12 @@ main {
 }
 
 .grid-container div {
-  border: green 1px solid;
   height: 20vh;
   width: 20vw;
   padding: 5px;
   -webkit-transition: ease-in-out 200ms;
   transition: ease-in-out 200ms;
+  cursor: pointer;
 }
 
 .grid-container div:hover {

@@ -27,7 +27,6 @@ function randomString(length) {
 
 function hackTextEffect() {
     var elements = document.querySelectorAll("p,h1");
-    console.log(elements);
     for (const element of elements) {
         hack(element);
     }
@@ -75,16 +74,45 @@ function switchMode() {
     }
 }
 
+function openNewTab(url) {
+    window.open(url, "_blank");
+}
+
 function addElements() {
-    
-    var elementsToAdd = fetch("./scripts/projects.json").then(results => results.text()).then(JSON.parse);
+    var elementsToAdd = [
+        {
+            "name": "Om Mig",
+            "description": "Sidan där jag skriver om mig själv och min interesse.",
+            "path": "../index.html",
+        },
+        {
+            "name": "Om Mig",
+            "description": "Sidan där jag skriver om mig själv och min interesse.",
+            "path": "./index.html",
+        },
+        {
+            "name": "Om Mig",
+            "description": "Sidan där jag skriver om mig själv och min interesse.",
+            "path": "./index.html",
+        },
+        {
+            "name": "Om Mig",
+            "description": "Sidan där jag skriver om mig själv och min interesse.",
+            "path": "./index.html",
+        }
+    ];
+    console.log(elementsToAdd);
     
     for (let index = 0; index < elementsToAdd.length; index++) {
         const element = elementsToAdd[index];
-        var newPara = document.createElement("p");
-        newPara.innerHTML = element;
+        var newHeader = document.createElement("h1");
+        newHeader.innerHTML = element["name"];
+        var newPara = document.createElement("P");
+        newPara.innerHTML = element["description"];
         var newDiv = document.createElement("div");
         newDiv.classList.add("lightCon");
+        newDiv.setAttribute("onclick", "window.open('" + element["path"] + "')");
+        newDiv.appendChild(newHeader);
         newDiv.appendChild(newPara);
         document.getElementsByClassName("grid-container")[0].appendChild(newDiv);
     }

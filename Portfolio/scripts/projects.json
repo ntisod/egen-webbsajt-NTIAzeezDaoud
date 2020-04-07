@@ -1,9 +1,0 @@
-{
-    "projects":[
-        {
-            "name": "Om Mig",
-            "description": "Sidan där jag skriver om mig själv och min interesse.",
-            "path": "./index.html"
-        }
-    ]
-}
