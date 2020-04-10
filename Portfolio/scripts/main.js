@@ -74,10 +74,6 @@ function switchMode() {
     }
 }
 
-function openNewTab(url) {
-    window.open(url, "_blank");
-}
-
 function addElements() {
     var elementsToAdd = [
         {
@@ -86,18 +82,18 @@ function addElements() {
             "path": "../index.html",
         },
         {
-            "name": "Om Mig",
-            "description": "Sidan där jag skriver om mig själv och min interesse.",
+            "name": "Kalkylator 1",
+            "description": "Miniräknare skriven i JavaScript som är baserad på eval() funktionen.",
             "path": "./index.html",
         },
         {
-            "name": "Om Mig",
-            "description": "Sidan där jag skriver om mig själv och min interesse.",
+            "name": "Kalkylator 2",
+            "description": "Miniräknare skriven i JavaScript som är baserad på en egen funktion som beräknar en sträng.",
             "path": "./index.html",
         },
         {
-            "name": "Om Mig",
-            "description": "Sidan där jag skriver om mig själv och min interesse.",
+            "name": "Portfolio",
+            "description": "Den här sidan... Portfolio.",
             "path": "./index.html",
         }
     ];

@@ -81,51 +81,25 @@ main{
         height: 20vh;
         width: 20vw;
         padding: 5px;
-        transition: ease-in-out 200ms;
         cursor: pointer;
+        p{
+            display: none;
+        }
+        h1{
+            vertical-align: middle;
+            transition: ease-in-out 300ms;
+            font-size: 3vmax;
+            text-align: center;
+        }
     }
     div:hover{
-        transition: ease-in-out 200ms;
-    }
-}
-
-
-
-@media only screen and (max-width: 640px){
-    .grid-container{
-        grid-template-columns: auto auto;
-        gap: 15vw;
-        div{
-            width: 100px;
-            height: 15vh;
+        p{
+            display: block;
         }
-    }
-
-    #menu{
-        display: none;
-        top: 10vh;
-        padding: 3px;
-        list-style-type: none;
-        width: 96.5vw;
-    }
-}
-
-@media only screen and (max-width: 640px){
-    .grid-container{
-        grid-template-columns: auto auto;
-        gap: 15vw;
-        div{
-            width: 30vw;
-            height: 15vh;
+        h1{
+            transition: ease-in-out 300ms;
+            font-size: 2vmax;
         }
-    }
-
-    #menu{
-        display: none;
-        top: 10vh;
-        padding: 3px;
-        list-style-type: none;
-        width: 96.5vw;
     }
 }
 
@@ -135,7 +109,32 @@ main{
         gap: 15vw;
         div{
             width: 30vw;
+            height: 20vh;
+        }
+    }
+
+    #menu{
+        display: none;
+        top: 10vh;
+        padding: 3px;
+        list-style-type: none;
+        width: 96.5vw;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    h1{
+        font-size: 1.5em;
+    }
+    .grid-container{
+        grid-template-columns: auto auto;
+        gap: 15vw;
+        div{
+            width: 100px;
             height: 15vh;
+            h1{
+                transform: translate(0, 50%);
+            }
         }
     }
 
@@ -155,6 +154,9 @@ main{
         div{
             width: 30vh;
             height: 30vh;
+            h1{
+                transform: translate(0, 50%);
+            }
         }
     }
 }

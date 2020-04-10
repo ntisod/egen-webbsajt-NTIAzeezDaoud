@@ -96,52 +96,29 @@ main {
   height: 20vh;
   width: 20vw;
   padding: 5px;
-  -webkit-transition: ease-in-out 200ms;
-  transition: ease-in-out 200ms;
   cursor: pointer;
 }
 
-.grid-container div:hover {
-  -webkit-transition: ease-in-out 200ms;
-  transition: ease-in-out 200ms;
+.grid-container div p {
+  display: none;
 }
 
-@media only screen and (max-width: 640px) {
-  .grid-container {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    gap: 15vw;
-  }
-  .grid-container div {
-    width: 100px;
-    height: 15vh;
-  }
-  #menu {
-    display: none;
-    top: 10vh;
-    padding: 3px;
-    list-style-type: none;
-    width: 96.5vw;
-  }
+.grid-container div h1 {
+  vertical-align: middle;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+  font-size: 3vmax;
+  text-align: center;
 }
 
-@media only screen and (max-width: 640px) {
-  .grid-container {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    gap: 15vw;
-  }
-  .grid-container div {
-    width: 30vw;
-    height: 15vh;
-  }
-  #menu {
-    display: none;
-    top: 10vh;
-    padding: 3px;
-    list-style-type: none;
-    width: 96.5vw;
-  }
+.grid-container div:hover p {
+  display: block;
+}
+
+.grid-container div:hover h1 {
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+  font-size: 2vmax;
 }
 
 @media only screen and (max-width: 970px) {
@@ -152,7 +129,33 @@ main {
   }
   .grid-container div {
     width: 30vw;
+    height: 20vh;
+  }
+  #menu {
+    display: none;
+    top: 10vh;
+    padding: 3px;
+    list-style-type: none;
+    width: 96.5vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .grid-container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    gap: 15vw;
+  }
+  .grid-container div {
+    width: 100px;
     height: 15vh;
+  }
+  .grid-container div h1 {
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%);
   }
   #menu {
     display: none;
@@ -172,6 +175,10 @@ main {
   .grid-container div {
     width: 30vh;
     height: 30vh;
+  }
+  .grid-container div h1 {
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%);
   }
 }
 /*# sourceMappingURL=style.css.map */
