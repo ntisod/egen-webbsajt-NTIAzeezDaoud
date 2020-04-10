@@ -81,6 +81,7 @@ main{
         height: 20vh;
         width: 20vw;
         padding: 5px;
+        z-index: -1;
         cursor: pointer;
         p{
             display: none;
@@ -99,6 +100,28 @@ main{
         h1{
             transition: ease-in-out 300ms;
             font-size: 2vmax;
+        }
+    }
+}
+
+.grid-container-collapsed{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    gap: 5vh 5vw;
+    justify-content: center;
+    grid-template-columns: auto;
+    div{
+        width: 90vw;
+        height: 10vh;
+        z-index: -1;
+        cursor: pointer;
+        p{
+            display: none;
+        }
+        h1{
+            text-align: center;
+            font-size: 5vmin;
         }
     }
 }
@@ -127,13 +150,22 @@ main{
         font-size: 1.5em;
     }
     .grid-container{
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         gap: 15vw;
         div{
-            width: 100px;
-            height: 15vh;
+            width: 90vw;
+            height: 20vh;
+            p{
+                display: block;
+            }
             h1{
-                transform: translate(0, 50%);
+                font-size: 1.5em;
+                transform: translate(0, 10%);
+            }
+        }
+        div::hover{
+            h1{
+                font-size: 1.5em;
             }
         }
     }

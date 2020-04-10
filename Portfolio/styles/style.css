@@ -96,6 +96,7 @@ main {
   height: 20vh;
   width: 20vw;
   padding: 5px;
+  z-index: -1;
   cursor: pointer;
 }
 
@@ -119,6 +120,35 @@ main {
   -webkit-transition: ease-in-out 300ms;
   transition: ease-in-out 300ms;
   font-size: 2vmax;
+}
+
+.grid-container-collapsed {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 5vh 5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+.grid-container-collapsed div {
+  width: 90vw;
+  height: 10vh;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.grid-container-collapsed div p {
+  display: none;
+}
+
+.grid-container-collapsed div h1 {
+  text-align: center;
+  font-size: 5vmin;
 }
 
 @media only screen and (max-width: 970px) {
@@ -145,17 +175,24 @@ main {
     font-size: 1.5em;
   }
   .grid-container {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
     gap: 15vw;
   }
   .grid-container div {
-    width: 100px;
-    height: 15vh;
+    width: 90vw;
+    height: 20vh;
+  }
+  .grid-container div p {
+    display: block;
   }
   .grid-container div h1 {
-    -webkit-transform: translate(0, 50%);
-            transform: translate(0, 50%);
+    font-size: 1.5em;
+    -webkit-transform: translate(0, 10%);
+            transform: translate(0, 10%);
+  }
+  .grid-container div::hover h1 {
+    font-size: 1.5em;
   }
   #menu {
     display: none;

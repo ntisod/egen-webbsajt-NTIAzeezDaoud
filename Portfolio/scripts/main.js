@@ -113,3 +113,15 @@ function addElements() {
         document.getElementsByClassName("grid-container")[0].appendChild(newDiv);
     }
 }
+
+function collapseText() {
+    let gridContainer = document.getElementsByClassName("grid-container");
+    if (gridContainer.length > 0) {
+        document.getElementsByClassName("grid-container")[0].classList.add("grid-container-collapsed");
+        document.getElementsByClassName("grid-container")[0].classList.remove("grid-container");
+    }
+    else{
+        document.getElementsByClassName("grid-container-collapsed")[0].classList.add("grid-container");
+        document.getElementsByClassName("grid-container-collapsed")[0].classList.remove("grid-container-collapsed");
+    }
+}
