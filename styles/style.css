@@ -216,8 +216,6 @@ main {
   }
   .grid-container div h1 {
     font-size: 1.3em;
-    -webkit-transform: translate(0, 50%);
-            transform: translate(0, 50%);
   }
   .grid-container div p {
     display: none;

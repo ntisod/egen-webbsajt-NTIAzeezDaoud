@@ -51,9 +51,11 @@ function switchMode() {
     
     if (menuIconSrc[menuIconSrc.length - 1] == "black.svg") {
         document.getElementById("menuIcon").src = "./bilder/blue.svg";
+        document.getElementById("modeSwitch").innerHTML = "Switch to Dark";
     }
     else{
         document.getElementById("menuIcon").src = "./bilder/black.svg";
+        document.getElementById("modeSwitch").innerHTML = "Switch to Light";
     }
 
     if (document.getElementById("menuIcon").src.split('/')[-1] == "") {
