@@ -50,10 +50,10 @@ function switchMode() {
     var menuIconSrc = document.getElementById("menuIcon").src.split('/')
     
     if (menuIconSrc[menuIconSrc.length - 1] == "black.svg") {
-        document.getElementById("menuIcon").src = "./images/blue.svg";
+        document.getElementById("menuIcon").src = "./bilder/blue.svg";
     }
     else{
-        document.getElementById("menuIcon").src = "./images/black.svg";
+        document.getElementById("menuIcon").src = "./bilder/black.svg";
     }
 
     if (document.getElementById("menuIcon").src.split('/')[-1] == "") {

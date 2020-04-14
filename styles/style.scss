@@ -17,6 +17,7 @@ header{
     height: 15vh;
     display: inline-flex;
     justify-content: space-between;
+    z-index: 1;
     img{
         float: right;
         margin: 0 1em 0 0;
@@ -81,10 +82,11 @@ main{
         height: 20vh;
         width: 20vw;
         padding: 5px;
-        z-index: -1;
         cursor: pointer;
+        z-index: 0;
         p{
             display: none;
+            font-size: large;
         }
         h1{
             vertical-align: middle;
@@ -99,7 +101,7 @@ main{
         }
         h1{
             transition: ease-in-out 300ms;
-            font-size: 2vmax;
+            font-size: 2em;
         }
     }
 }
@@ -114,7 +116,6 @@ main{
     div{
         width: 90vw;
         height: 10vh;
-        z-index: -1;
         cursor: pointer;
         p{
             display: none;
@@ -187,7 +188,19 @@ main{
             width: 30vh;
             height: 30vh;
             h1{
+                font-size: 1.3em;
                 transform: translate(0, 50%);
+            }
+            p{
+                display: none;
+            }
+        }
+        div:hover{
+            h1{
+                font-size: 1.3em;
+            }
+            p{
+                display: none;
             }
         }
     }

@@ -23,6 +23,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 1;
 }
 
 header img {
@@ -96,12 +97,13 @@ main {
   height: 20vh;
   width: 20vw;
   padding: 5px;
-  z-index: -1;
   cursor: pointer;
+  z-index: 0;
 }
 
 .grid-container div p {
   display: none;
+  font-size: large;
 }
 
 .grid-container div h1 {
@@ -119,7 +121,7 @@ main {
 .grid-container div:hover h1 {
   -webkit-transition: ease-in-out 300ms;
   transition: ease-in-out 300ms;
-  font-size: 2vmax;
+  font-size: 2em;
 }
 
 .grid-container-collapsed {
@@ -138,7 +140,6 @@ main {
 .grid-container-collapsed div {
   width: 90vw;
   height: 10vh;
-  z-index: -1;
   cursor: pointer;
 }
 
@@ -214,8 +215,18 @@ main {
     height: 30vh;
   }
   .grid-container div h1 {
+    font-size: 1.3em;
     -webkit-transform: translate(0, 50%);
             transform: translate(0, 50%);
+  }
+  .grid-container div p {
+    display: none;
+  }
+  .grid-container div:hover h1 {
+    font-size: 1.3em;
+  }
+  .grid-container div:hover p {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
