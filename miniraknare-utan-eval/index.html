@@ -3,58 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miniräknare utan Eval</title>
-    <link rel="stylesheet" href="../miniraknare-med-eval/style.css">
-    <script src="../miniraknare-med-eval/main.js"></script>
+    <title>Azeez Daoud - Miniräknare utan Eval</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Oswald&display=swap" rel="stylesheet">
+    <script src="../scripts/main.js"></script>
 </head>
 <body>
+    <header>
+            <h1>Azeez Daoud - Miniräknare utan Eval</h1>
+            <img id="menuIcon" src="../bilder/black.svg" onclick="menuClick()">
+            <ul id="menu">
+                <li id="modeSwitch" onclick="switchMode()">Switch to Light</li>
+                <li onclick="collapseText()">Collapse/Uncollapse Text</li>
+            </ul>
+    </header>
+
     <main>
-        <h1>Miniräknare utan eval()</h1>
-        
-        <table>
-            <tbody>
-                <tr>
-                    <td colspan="4"><input type="text" id="result" disabled></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField(Math.E)">e</button></td>
-                    <td><button onclick="addToField(Math.PI)">pi</button></td>
-                    <td><button onclick="addToField('^')">^</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('(')">(</button></td>
-                    <td><button onclick="addToField(')')">)</button></td>
-                    <td><button onclick="clearField()">C</button></td>
-                    <td><button onclick="deleteLast()">&lt;-</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('7')">7</button></td>
-                    <td><button onclick="addToField('8')">8</button></td>
-                    <td><button onclick="addToField('9')">9</button></td>
-                    <td><button onclick="addToField('+')">+</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('4')">4</button></td>
-                    <td><button onclick="addToField('5')">5</button></td>
-                    <td><button onclick="addToField('6')">6</button></td>
-                    <td><button onclick="addToField('-')">-</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('1')">1</button></td>
-                    <td><button onclick="addToField('2')">2</button></td>
-                    <td><button onclick="addToField('3')">3</button></td>
-                    <td><button onclick="addToField('*')">x</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('.')">,</button></td>
-                    <td><button onclick="addToField('0')">0</button></td>
-                    <td><button onclick="evallessCalculate()">=</button></td>
-                    <td><button onclick="addToField('/')">/</button></td>
-                </tr>
-            </tbody>
-        </table>
+        <h2><a href="./miniraknare.html">Miniräknare utan Eval</a></h2>
+        <p>Den andra lösningen till <a href="../miniraknare-med-eval/index.html">Miniräknare problemet som löstes med eval</a>. Lösening går ut på att en funktion som är rekursiv läser av en sträng som matas in av användaren därefter så börjar funktionen att dela strängen till tal och operationer. När funktionen läser en parantes så tills nästa stäng-parantes och passerar den som argument till samma funktion (rekursiv) och börjar göra samma läsa och beräkning igen. Om det händer så att det är det är parantes i parantes så ser funktionen till att när det kommer en till parantes när den läser strängen inuti en parantes så ska den hoppa över parantes av antal med som öppnades efter första parantes.</p>
     </main>
-    <h1>Method - Rekursiv Beräkning:</h1>
-    <section></section>
+
+    <footer>
+
+    </footer>
 </body>
 </html>

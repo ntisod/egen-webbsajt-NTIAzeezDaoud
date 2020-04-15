@@ -1,57 +1,30 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
-    <title>Miniräknare</title>
+    <title>Azeez Daoud - Miniräknare med Eval</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Oswald&display=swap" rel="stylesheet">
+    <script src="../scripts/main.js"></script>
 </head>
 <body>
+    <header>
+            <h1>Azeez Daoud - Miniräknare med Eval</h1>
+            <img id="menuIcon" src="../bilder/black.svg" onclick="menuClick()">
+            <ul id="menu">
+                <li id="modeSwitch" onclick="switchMode()">Switch to Light</li>
+                <li onclick="collapseText()">Collapse/Uncollapse Text</li>
+            </ul>
+    </header>
+
     <main>
-        <h1>Miniräknare med Eval()</h1>
-        <table>
-            <tbody>
-                <tr>
-                    <td colspan="5"><input type="text" id="result" disabled></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('√(')">√</button></td>
-                    <td><button onclick="addToField('(')">(</button></td>
-                    <td><button onclick="addToField(')')">)</button></td>
-                    <td><button onclick="clearField()">C</button></td>
-                    <td><button onclick="deleteLast()">&lt;-</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('e^(')">e^x</button></td>
-                    <td><button onclick="addToField('7')">7</button></td>
-                    <td><button onclick="addToField('8')">8</button></td>
-                    <td><button onclick="addToField('9')">9</button></td>
-                    <td><button onclick="addToField('+')">+</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('ln(')">ln</button></td>
-                    <td><button onclick="addToField('4')">4</button></td>
-                    <td><button onclick="addToField('5')">5</button></td>
-                    <td><button onclick="addToField('6')">6</button></td>
-                    <td><button onclick="addToField('-')">-</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('pi')">π</button></td>
-                    <td><button onclick="addToField('1')">1</button></td>
-                    <td><button onclick="addToField('2')">2</button></td>
-                    <td><button onclick="addToField('3')">3</button></td>
-                    <td><button onclick="addToField('*')">x</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="addToField('^')">x^y</button></td>
-                    <td><button onclick="addToField('.')">,</button></td>
-                    <td><button onclick="addToField('0')">0</button></td>
-                    <td><button onclick="calculate()">=</button></td>
-                    <td><button onclick="addToField('/')">/</button></td>
-                </tr>
-        </tbody>
-        </table>
+        <h2><a href="./miniraknare.html">Miniräknare Med Eval</a></h2>
+        <p>Projektet gick ut på att göra en miniräknare. Min lösning var att göra en miniräknare genom att ta en sträng som byggs genom att användaren matar in data genom miniräknarens knappar. Därefter så förmatteras strängen till sträng som JavaScript ska kunna beräkna och svaret beräknas genom eval() funktionen som är inbyggd i JavaScript som kör sträng som det vore vara JavaScript kod. Denna lösning ansågs av läraren vara för enkel och därför en annan version gjordes som fungerar utan eval(). Den hittar du <a href="../miniraknare-utan-eval/index.html">här</a></p>
     </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>

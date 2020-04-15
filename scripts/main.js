@@ -50,11 +50,11 @@ function switchMode() {
     var menuIconSrc = document.getElementById("menuIcon").src.split('/')
     
     if (menuIconSrc[menuIconSrc.length - 1] == "black.svg") {
-        document.getElementById("menuIcon").src = "./bilder/blue.svg";
+        document.getElementById("menuIcon").src = "../bilder/blue.svg";
         document.getElementById("modeSwitch").innerHTML = "Switch to Dark";
     }
     else{
-        document.getElementById("menuIcon").src = "./bilder/black.svg";
+        document.getElementById("menuIcon").src = "../bilder/black.svg";
         document.getElementById("modeSwitch").innerHTML = "Switch to Light";
     }
 
@@ -86,12 +86,12 @@ function addElements() {
         {
             "name": "Kalkylator 1",
             "description": "Miniräknare skriven i JavaScript som är baserad på eval() funktionen.",
-            "path": "./index.html",
+            "path": "./miniraknare-med-eval",
         },
         {
             "name": "Kalkylator 2",
             "description": "Miniräknare skriven i JavaScript som är baserad på en egen funktion som beräknar en sträng.",
-            "path": "./index.html",
+            "path": "./miniraknare-utan-eval",
         },
         {
             "name": "Portfolio",
