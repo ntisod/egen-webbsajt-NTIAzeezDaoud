@@ -81,7 +81,7 @@ function addElements() {
         {
             "name": "Om Mig",
             "description": "Sidan där jag skriver om mig själv och min interesse.",
-            "path": "../index.html",
+            "path": "./om-mig",
         },
         {
             "name": "Kalkylator 1",
