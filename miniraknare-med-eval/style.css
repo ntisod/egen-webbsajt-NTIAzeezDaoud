@@ -14,7 +14,7 @@ button{
     background-color: #448888;
     color: white;
     border: none;
-    width: 15vh;
+    width: 20vh;
     height: 10vh;
     font-size: 5vh;
 }
@@ -38,9 +38,16 @@ button:hover{
     color: #000000;
 }
 
+.subheader p{
+    font-size: 1em;
+}
+h1.subheader{
+    font-size: 2em;
+}
+
 @media only screen and (max-width: 850px){
     button{
-        width: 15vw;
+        width: 20vw;
         height: 10vh;
         font-size: 2.5vmax;
     }
@@ -51,7 +58,7 @@ button:hover{
 
 @media only screen and (max-width: 850px) and (orientation: landscape){
     button{
-        width: 15vw;
+        width: 20vw;
         height: 10vh;
         font-size: 2.5vmax;
     }
