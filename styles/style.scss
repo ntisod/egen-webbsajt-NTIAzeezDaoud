@@ -56,6 +56,13 @@ main{
 .darkCon{
     background-color: #000000;
     color: #00FFFF;
+    a{
+        color: #FFF;
+    }
+    a:hover{
+        transition: 200ms ease-in-out;
+        color: #00FFFF
+    }
     ul li:hover{
         background-color: #00FFFF;
         color: #000000;
@@ -65,6 +72,13 @@ main{
 .lightCon{
     background-color: #00FFFF;
     color: #000000;
+    a{
+        color: #0000FF;
+    }
+    a:hover{
+        transition: 200ms ease-in-out;
+        color: #000;
+    }
     ul li:hover{
         background-color: #000000;
         color: #00FFFF;
