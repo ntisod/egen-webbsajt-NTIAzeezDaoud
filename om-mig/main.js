@@ -29,13 +29,13 @@ function circutAnimationIdle(){ // Metoden tar hand om animationen av kretsbilde
 
 function PictureEasterEgg(){ // Metoden tar hand om en Easter Egg i "min bild" så att när man trycker på den så ändras den
     myPic = document.getElementById("mypic");
-    currentPic = "./bilder/azeezimage-640px.jpg";
+    currentPic = "../bilder/azeezimage-640px.jpg";
     myPic.addEventListener("click", function(){
-        if (currentPic == "./bilder/azeezimage-640px.jpg") {
-            currentPic = "./bilder/azeezimagememe-640px.jpg";
+        if (currentPic == "../bilder/azeezimage-640px.jpg") {
+            currentPic = "../bilder/azeezimagememe-640px.jpg";
             myPic.srcset = currentPic;
         } else {
-            currentPic = "./bilder/azeezimage-640px.jpg";
+            currentPic = "../bilder/azeezimage-640px.jpg";
             myPic.srcset = currentPic;
         }
     })
@@ -44,7 +44,7 @@ function PictureEasterEgg(){ // Metoden tar hand om en Easter Egg i "min bild" s
 function memeEasterEgg(){ // Metoden tar hand om en Easter Egg i första stycket (paragraph) där om man trycker på ordet memes så kommer det upp en meme i en ny flik
     memeText = document.getElementById("memeEasterEgg");
     memeText.addEventListener("click", function(){
-        window.open("./bilder/azeezmemehtml-640px.jpg");
+        window.open("../bilder/azeezmemehtml-640px.jpg");
     })
 }
 
