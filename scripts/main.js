@@ -26,7 +26,7 @@ function randomString(length) {
 }
 
 function hackTextEffect() {
-    var elements = document.querySelectorAll("p,h1");
+    var elements = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
     for (const element of elements) {
         hack(element);
     }
@@ -42,7 +42,7 @@ function hack(element) {
         if (count++ > oldText.length) {
             clearInterval(hackInterval);
         }
-    }, 700/oldText.length);
+    }, 500/oldText.length);
 }
 
 function switchMode() {
@@ -92,6 +92,11 @@ function addElements() {
             "name": "Kalkylator 2",
             "description": "Miniräknare skriven i JavaScript som är baserad på en egen funktion som beräknar en sträng.",
             "path": "./miniraknare-utan-eval",
+        },
+        {
+            "name": "Trouble in Town",
+            "description": "Ett LAN rollspel skriven i C# som är baserad på spelen Werewolf och Mafia.",
+            "path": "./trouble-in-town",
         },
         {
             "name": "Portfolio",
