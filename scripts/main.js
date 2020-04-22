@@ -47,18 +47,26 @@ function hack(element) {
 
 function switchMode() {
     var elementsToChange = document.querySelectorAll(".darkCon, .lightCon");
-    var menuIconSrc = document.getElementById("menuIcon").src.split('/')
+    var menuIconSrc = document.getElementById("menu-icon").src.split('/')
     
     if (menuIconSrc[menuIconSrc.length - 1] == "black.svg") {
-        document.getElementById("menuIcon").src = "../bilder/blue.svg";
+        document.getElementById("menu-icon").src = "../bilder/blue.svg";
+        if (document.getElementById("github-icon") != null) {
+            document.getElementById("github-icon").src = "../bilder/GitHub-Mark-64px.png";
+            document.getElementById("home-icon").src = "../bilder/home-icon-light.svg";
+        }
         document.getElementById("modeSwitch").innerHTML = "Switch to Dark";
     }
     else{
-        document.getElementById("menuIcon").src = "../bilder/black.svg";
+        document.getElementById("menu-icon").src = "../bilder/black.svg";
+        if (document.getElementById("github-icon") != null) {
+            document.getElementById("github-icon").src = "../bilder/GitHub-Mark-Light-64px.png";
+            document.getElementById("home-icon").src = "../bilder/home-icon.svg";
+        }
         document.getElementById("modeSwitch").innerHTML = "Switch to Light";
     }
 
-    if (document.getElementById("menuIcon").src.split('/')[-1] == "") {
+    if (document.getElementById("menu-icon").src.split('/')[-1] == "") {
         
     }
 
@@ -114,13 +122,12 @@ function addElements() {
         newPara.innerHTML = element["description"];
         var newDiv = document.createElement("div");
         newDiv.classList.add("lightCon");
-        newDiv.setAttribute("onclick", "window.open('" + element["path"] + "')");
+        newDiv.setAttribute("onclick", "window.open('" + element["path"] + "', '_self')");
         newDiv.appendChild(newHeader);
         newDiv.appendChild(newPara);
         document.getElementsByClassName("grid-container")[0].appendChild(newDiv);
     }
 }
-
 function collapseText() {
     let gridContainer = document.getElementsByClassName("grid-container");
     if (gridContainer.length > 0) {

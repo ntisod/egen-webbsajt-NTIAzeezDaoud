@@ -18,7 +18,7 @@ header{
     display: inline-flex;
     justify-content: space-between;
     z-index: 1;
-    img{
+    #menu-icon{
         float: right;
         margin: 0 1em 0 0;
     }
@@ -30,6 +30,11 @@ header{
     
     img:hover{
         cursor: pointer;
+    }
+    #home-icon{
+        width: 32px;
+        border-radius: 13%;
+        float: left;
     }
 }
 
@@ -83,6 +88,13 @@ main{
         background-color: #000000;
         color: #00FFFF;
     }
+}
+
+.click{
+    transition: 4000ms ease-in-out;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
 .grid-container{
@@ -139,6 +151,11 @@ main{
             font-size: 5vmin;
         }
     }
+}
+
+.project-body, footer{
+    width: 90vw;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 970px){

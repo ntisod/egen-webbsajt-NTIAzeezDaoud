@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase; /* Alla bokstäver är stora eftersom alla headers ska vara stora bokstäver (inte alla header-nivåerna har används docks) */
 }
 
+#home-icon{
+    background-color: #bbffff;
+    padding: 5px;
+    width: 32px;
+    border-radius: 13%;
+    float: left;
+    margin: 2px 10px 2px 2px;
+    cursor: pointer;
+}
 ::selection{ /* Hur texten ändrar stil när man markerar den  */
     background: #BBffff;
     color: black;
