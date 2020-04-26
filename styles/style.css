@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000000;
-  color: #00FFFF;
+  color: #bbffff;
 }
 
 header {
@@ -27,12 +27,14 @@ header {
 }
 
 header #menu-icon {
+  width: 32px;
   float: right;
-  margin: 0 1em 0 0;
+  margin: 1vw;
 }
 
 header h1 {
-  margin: 0 0 0 1em;
+  font-size: 2em;
+  margin: 0.2em;
   line-height: 14vh;
 }
 
@@ -42,12 +44,23 @@ header img:hover {
 
 header #home-icon {
   width: 32px;
-  border-radius: 13%;
   float: left;
+  margin: 1vw;
 }
 
 main {
   padding-top: 20vh;
+}
+
+#overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: url("../bilder/circuit.jpg");
+  background-size: 50%;
+  opacity: 0.2;
+  top: 0;
+  z-index: -1;
 }
 
 #menu {
@@ -68,7 +81,7 @@ main {
 
 .darkCon {
   background-color: #000000;
-  color: #00FFFF;
+  color: #bbffff;
 }
 
 .darkCon a {
@@ -78,16 +91,16 @@ main {
 .darkCon a:hover {
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
-  color: #00FFFF;
+  color: #bbffff;
 }
 
 .darkCon ul li:hover {
-  background-color: #00FFFF;
+  background-color: #bbffff;
   color: #000000;
 }
 
 .lightCon {
-  background-color: #00FFFF;
+  background-color: #bbffff;
   color: #000000;
 }
 
@@ -103,7 +116,7 @@ main {
 
 .lightCon ul li:hover {
   background-color: #000000;
-  color: #00FFFF;
+  color: #bbffff;
 }
 
 .click {
@@ -112,6 +125,28 @@ main {
   background-color: white;
   width: 100vw;
   height: 100vh;
+}
+
+@-webkit-keyframes container-pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px #00FFFF;
+            box-shadow: 0px 0px 0px 0px #00FFFF;
+  }
+  70% {
+    -webkit-box-shadow: 0px 0px 50px 5px #00FFFF;
+            box-shadow: 0px 0px 50px 5px #00FFFF;
+  }
+}
+
+@keyframes container-pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px #00FFFF;
+            box-shadow: 0px 0px 0px 0px #00FFFF;
+  }
+  70% {
+    -webkit-box-shadow: 0px 0px 50px 5px #00FFFF;
+            box-shadow: 0px 0px 50px 5px #00FFFF;
+  }
 }
 
 .grid-container {
@@ -133,6 +168,8 @@ main {
   padding: 5px;
   cursor: pointer;
   z-index: 0;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
 }
 
 .grid-container div p {
@@ -146,6 +183,17 @@ main {
   transition: ease-in-out 300ms;
   font-size: 3vmax;
   text-align: center;
+}
+
+.grid-container div:hover {
+  -webkit-transition: ease-in-out 1000ms;
+  transition: ease-in-out 1000ms;
+  -webkit-animation-name: container-pulse;
+          animation-name: container-pulse;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .grid-container div:hover p {
@@ -184,6 +232,16 @@ main {
 .grid-container-collapsed div h1 {
   text-align: center;
   font-size: 5vmin;
+  top: 0;
+}
+
+.grid-container-collapsed div:hover {
+  -webkit-animation-name: container-pulse;
+          animation-name: container-pulse;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .project-body, footer {
@@ -213,6 +271,12 @@ main {
 @media only screen and (max-width: 640px) {
   h1 {
     font-size: 1.5em;
+    padding: 0;
+  }
+  #home-icon, #menu-icon {
+    width: 16px;
+    -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7);
   }
   .grid-container {
     -ms-grid-columns: auto;
@@ -221,7 +285,7 @@ main {
   }
   .grid-container div {
     width: 90vw;
-    height: 20vh;
+    height: 23vh;
   }
   .grid-container div p {
     display: block;

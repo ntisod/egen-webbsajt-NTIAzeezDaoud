@@ -1,3 +1,5 @@
+$blue: #bbffff;
+
 h1,h2,h3,h4,h5,h6{
     font-family: "Oswald", sans-serif;
 }
@@ -8,7 +10,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #000000;
-    color: #00FFFF;
+    color: $blue;
 }
 
 header{
@@ -19,12 +21,14 @@ header{
     justify-content: space-between;
     z-index: 1;
     #menu-icon{
+        width: 32px;
         float: right;
-        margin: 0 1em 0 0;
+        margin: 1vw;
     }
 
     h1{
-        margin: 0 0 0 1em;
+        font-size: 2em;
+        margin: 0.2em;
         line-height: 14vh;
     }
     
@@ -33,13 +37,24 @@ header{
     }
     #home-icon{
         width: 32px;
-        border-radius: 13%;
         float: left;
+        margin: 1vw;
     }
 }
 
 main{
     padding-top: 20vh;
+}
+
+#overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("../bilder/circuit.jpg");
+    background-size: 50%;
+    opacity: 0.2;
+    top: 0;
+    z-index: -1;
 }
 
 #menu{
@@ -60,22 +75,22 @@ main{
 
 .darkCon{
     background-color: #000000;
-    color: #00FFFF;
+    color: $blue;
     a{
         color: #FFF;
     }
     a:hover{
         transition: 200ms ease-in-out;
-        color: #00FFFF
+        color: $blue
     }
     ul li:hover{
-        background-color: #00FFFF;
+        background-color: $blue;
         color: #000000;
     }
 }
 
 .lightCon{
-    background-color: #00FFFF;
+    background-color: $blue;
     color: #000000;
     a{
         color: #0000FF;
@@ -86,7 +101,7 @@ main{
     }
     ul li:hover{
         background-color: #000000;
-        color: #00FFFF;
+        color: $blue;
     }
 }
 
@@ -95,6 +110,15 @@ main{
     background-color: white;
     width: 100vw;
     height: 100vh;
+}
+
+@keyframes container-pulse{
+    0%{
+        box-shadow: 0px 0px 0px 0px #00FFFF;
+    }
+    70%{
+        box-shadow: 0px 0px 50px 5px #00FFFF;
+    }
 }
 
 .grid-container{
@@ -110,6 +134,7 @@ main{
         padding: 5px;
         cursor: pointer;
         z-index: 0;
+        transition: ease-in-out 300ms;
         p{
             display: none;
             font-size: large;
@@ -122,6 +147,7 @@ main{
         }
     }
     div:hover{
+        transition: ease-in-out 1000ms;
         p{
             display: block;
         }
@@ -129,6 +155,10 @@ main{
             transition: ease-in-out 300ms;
             font-size: 2em;
         }
+
+        animation-name: container-pulse;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -149,7 +179,13 @@ main{
         h1{
             text-align: center;
             font-size: 5vmin;
+            top: 0;
         }
+    }
+    div:hover{
+        animation-name: container-pulse;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -180,13 +216,18 @@ main{
 @media only screen and (max-width: 640px){
     h1{
         font-size: 1.5em;
+        padding: 0;
+    }
+    #home-icon, #menu-icon{
+        width: 16px;
+        transform: scale(0.7, 0.7);
     }
     .grid-container{
         grid-template-columns: auto;
         gap: 15vw;
         div{
             width: 90vw;
-            height: 20vh;
+            height: 23vh;
             p{
                 display: block;
             }

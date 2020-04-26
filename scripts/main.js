@@ -3,7 +3,12 @@ window.onload=()=>{
     document.getElementsByTagName("header")[0].classList.add("lightCon");
     document.getElementById("menu").classList.add("lightCon");
     hackTextEffect();
-    addElements();
+    if (document.querySelectorAll(".grid-container").length > 0) {
+        addElements();
+    }
+    
+    parallax();
+    circutAnimationIdle();
 }
 
 function menuClick() {
@@ -82,6 +87,22 @@ function switchMode() {
             console.log("Dark");
         }  
     }
+}
+
+function parallax(){ // Parallax metoden ger en parallax effekt för sidan (att bakgrunden går inte med samma hastighet med förgrunden)
+    window.addEventListener("scroll", function(){
+        let offset = window.pageYOffset;
+        document.getElementById("overlay").style.backgroundPositionY = -offset*0.2 + "px";
+    })
+}
+
+function circutAnimationIdle(){ // Metoden tar hand om animationen av kretsbilden i bakgrunden
+    animationPosition = 1;
+    window.setInterval(() => {
+        backgroundX = document.getElementById("overlay").style;
+        backgroundX.backgroundPositionX = animationPosition + "px";
+        animationPosition += 0.1;
+    }, 1000/60);
 }
 
 function addElements() {
