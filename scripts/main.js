@@ -123,6 +123,16 @@ function addElements() {
             "path": "./miniraknare-utan-eval",
         },
         {
+            "name": "Jul Hemsida",
+            "description": "Ett grupp projekt där vi skulle skriva ett jul hälsning.",
+            "path": "./jul-hemsida",
+        },
+        {
+            "name": "Internets Historia",
+            "description": "Ett grupp projekt där vi skulle om internets historia i form av ett tabell.",
+            "path": "./internets-historia",
+        },
+        {
             "name": "Trouble in Town",
             "description": "Ett LAN rollspel skriven i C# som är baserad på spelen Werewolf och Mafia.",
             "path": "./trouble-in-town",

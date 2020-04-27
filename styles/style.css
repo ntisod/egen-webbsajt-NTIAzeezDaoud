@@ -58,7 +58,7 @@ main {
   height: 100vh;
   background: url("../bilder/circuit.jpg");
   background-size: 50%;
-  opacity: 0.2;
+  opacity: 0.1;
   top: 0;
   z-index: -1;
 }
@@ -117,14 +117,6 @@ main {
 .lightCon ul li:hover {
   background-color: #000000;
   color: #bbffff;
-}
-
-.click {
-  -webkit-transition: 4000ms ease-in-out;
-  transition: 4000ms ease-in-out;
-  background-color: white;
-  width: 100vw;
-  height: 100vh;
 }
 
 @-webkit-keyframes container-pulse {
