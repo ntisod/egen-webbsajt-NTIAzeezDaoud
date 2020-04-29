@@ -86,7 +86,7 @@ main{
         transition: 200ms ease-in-out;
         color: $blue
     }
-    ul li:hover{
+    #menu ul li:hover{
         background-color: $blue;
         color: #000000;
     }
@@ -102,7 +102,7 @@ main{
         transition: 200ms ease-in-out;
         color: #000;
     }
-    ul li:hover{
+    #menu ul li:hover{
         background-color: #000000;
         color: $blue;
     }

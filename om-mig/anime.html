@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azeez Daoud - Anime</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./favoriter.css">
+    <script src="../scripts/main.js"></script>
+    <script src="./favoriter.js"></script>
+</head>
+<body>
+    <header>
+        <img  alt="home icon" id="home-icon" src="../bilder/home-icon.svg" onclick="window.open('../index.html', '_self')">
+        <h1>Azeez Daoud</h1>
+        <img id="menu-icon" src="../bilder/black.svg" onclick="menuClick()">
+        <ul id="menu">
+            <li id="modeSwitch" onclick="switchMode()">Switch to Light</li>
+            <li onclick="collapseText()">Collapse/Uncollapse Text</li>
+        </ul>
+    </header>
+
+    <main class="project-body">
+        <h2>Anime</h2>
+        <ul class="favorite-list">
+            <li><p>Yu-Gi-Oh 5D's</p> <iframe width="100%" height="400px" src="https://www.youtube.com/embed/HTg9N1WHmhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li><p>JoJo's Bizarre Adventure <button onclick="KillerQueen();">☠</button></p> <iframe width="100%" height="400px" src="https://www.youtube.com/embed/OchozLuSHM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li><p>My Hero Academia</p> <iframe width="100%" height="400px" src="https://www.youtube.com/embed/-77UEct0cZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        </ul>
+    </main>
+    <div id="overlay"></div>
+    <footer>
+        
+    </footer>
+</body>
+</html>

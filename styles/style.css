@@ -96,7 +96,7 @@ main {
   color: #bbffff;
 }
 
-.darkCon ul li:hover {
+.darkCon #menu ul li:hover {
   background-color: #bbffff;
   color: #000000;
 }
@@ -116,7 +116,7 @@ main {
   color: #000;
 }
 
-.lightCon ul li:hover {
+.lightCon #menu ul li:hover {
   background-color: #000000;
   color: #bbffff;
 }

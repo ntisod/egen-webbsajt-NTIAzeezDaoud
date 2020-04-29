@@ -45,17 +45,17 @@ var ommig =[
     {
         "name": "Musik",
         "description": "Mina favorit band.",
-        "path": "./favoriter/musik.html"
+        "path": "./musik.html"
     },
     {
         "name": "Anime",
         "description": "Mina favorit animerade serier.",
-        "path": "./favoriter/anime.html"
+        "path": "./anime.html"
     },
     {
         "name": "Böcker",
         "description": "Min favorit böcker",
-        "path": "./favoriter/bocker.html"
+        "path": "./bocker.html"
     },
 ];
 
@@ -119,16 +119,22 @@ function switchMode() {
     
     if (menuIconSrc[menuIconSrc.length - 1] == "black.svg") {
         document.getElementById("menu-icon").src = "../bilder/blue.svg";
+        
         if (document.getElementById("github-icon") != null) {
             document.getElementById("github-icon").src = "../bilder/GitHub-Mark-64px.png";
+        }
+        if(document.getElementById("home-icon") != null){
             document.getElementById("home-icon").src = "../bilder/home-icon-light.svg";
         }
         document.getElementById("modeSwitch").innerHTML = "Switch to Dark";
     }
     else{
         document.getElementById("menu-icon").src = "../bilder/black.svg";
+        
         if (document.getElementById("github-icon") != null) {
             document.getElementById("github-icon").src = "../bilder/GitHub-Mark-Light-64px.png";
+        }
+        if(document.getElementById("home-icon") != null){
             document.getElementById("home-icon").src = "../bilder/home-icon.svg";
         }
         document.getElementById("modeSwitch").innerHTML = "Switch to Light";
