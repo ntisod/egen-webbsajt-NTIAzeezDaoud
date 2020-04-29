@@ -1,14 +1,77 @@
-window.onload=()=>{
+var projects = [
+    {
+        "name": "Om Mig",
+        "description": "Sidan där jag skriver om mig själv och min interesse.",
+        "path": "./om-mig",
+    },
+    {
+        "name": "Kalkylator 1",
+        "description": "Miniräknare skriven i JavaScript som är baserad på eval() funktionen.",
+        "path": "./miniraknare-med-eval",
+    },
+    {
+        "name": "Kalkylator 2",
+        "description": "Miniräknare skriven i JavaScript som är baserad på en egen funktion som beräknar en sträng.",
+        "path": "./miniraknare-utan-eval",
+    },
+    {
+        "name": "Jul Hemsida",
+        "description": "Ett grupp projekt där vi skulle skriva ett jul hälsning.",
+        "path": "./jul-hemsida",
+    },
+    {
+        "name": "Internets Historia",
+        "description": "Ett grupp projekt där vi skulle om internets historia i form av ett tabell.",
+        "path": "./internets-historia",
+    },
+    {
+        "name": "Trouble in Town",
+        "description": "Ett LAN rollspel skriven i C# som är baserad på spelen Werewolf och Mafia.",
+        "path": "./trouble-in-town",
+    },
+    {
+        "name": "Portfolio",
+        "description": "Den här sidan... Portfolio.",
+        "path": "./index.html",
+    }
+];
+
+var ommig =[
+    {
+        "name": "Om Mig",
+        "description": "Sidan där jag skriver om mig själv och min interesse.",
+        "path": "./om-mig.html"
+    },
+    {
+        "name": "Musik",
+        "description": "Mina favorit band.",
+        "path": "./favoriter/musik.html"
+    },
+    {
+        "name": "Anime",
+        "description": "Mina favorit animerade serier.",
+        "path": "./favoriter/anime.html"
+    },
+    {
+        "name": "Böcker",
+        "description": "Min favorit böcker",
+        "path": "./favoriter/bocker.html"
+    },
+];
+
+window.onload =()=>{
     document.getElementsByTagName("body")[0].classList.add("darkCon");
     document.getElementsByTagName("header")[0].classList.add("lightCon");
     document.getElementById("menu").classList.add("lightCon");
     hackTextEffect();
-    if (document.querySelectorAll(".grid-container").length > 0) {
-        addElements();
-    }
-    
     parallax();
     circutAnimationIdle();
+    if(document.getElementById("projects")){
+        addElements(projects, "projects");
+    }
+    else if(document.getElementById("ommig")){
+        addElements(ommig, "ommig");
+    }
 }
 
 function menuClick() {
@@ -105,45 +168,7 @@ function circutAnimationIdle(){ // Metoden tar hand om animationen av kretsbilde
     }, 1000/60);
 }
 
-function addElements() {
-    var elementsToAdd = [
-        {
-            "name": "Om Mig",
-            "description": "Sidan där jag skriver om mig själv och min interesse.",
-            "path": "./om-mig",
-        },
-        {
-            "name": "Kalkylator 1",
-            "description": "Miniräknare skriven i JavaScript som är baserad på eval() funktionen.",
-            "path": "./miniraknare-med-eval",
-        },
-        {
-            "name": "Kalkylator 2",
-            "description": "Miniräknare skriven i JavaScript som är baserad på en egen funktion som beräknar en sträng.",
-            "path": "./miniraknare-utan-eval",
-        },
-        {
-            "name": "Jul Hemsida",
-            "description": "Ett grupp projekt där vi skulle skriva ett jul hälsning.",
-            "path": "./jul-hemsida",
-        },
-        {
-            "name": "Internets Historia",
-            "description": "Ett grupp projekt där vi skulle om internets historia i form av ett tabell.",
-            "path": "./internets-historia",
-        },
-        {
-            "name": "Trouble in Town",
-            "description": "Ett LAN rollspel skriven i C# som är baserad på spelen Werewolf och Mafia.",
-            "path": "./trouble-in-town",
-        },
-        {
-            "name": "Portfolio",
-            "description": "Den här sidan... Portfolio.",
-            "path": "./index.html",
-        }
-    ];
-    console.log(elementsToAdd);
+function addElements(elementsToAdd, id) { 
     
     for (let index = 0; index < elementsToAdd.length; index++) {
         const element = elementsToAdd[index];
@@ -156,7 +181,7 @@ function addElements() {
         newDiv.setAttribute("onclick", "window.open('" + element["path"] + "', '_self')");
         newDiv.appendChild(newHeader);
         newDiv.appendChild(newPara);
-        document.getElementsByClassName("grid-container")[0].appendChild(newDiv);
+        document.getElementById(id).appendChild(newDiv);
     }
 }
 function collapseText() {
