@@ -126,7 +126,7 @@ function switchMode() {
         if(document.getElementById("home-icon") != null){
             document.getElementById("home-icon").src = "../bilder/home-icon-light.svg";
         }
-        document.getElementById("modeSwitch").innerHTML = "Switch to Dark";
+        document.getElementById("modeSwitch").innerHTML = "Byt till Mörk";
     }
     else{
         document.getElementById("menu-icon").src = "../bilder/black.svg";
@@ -137,7 +137,7 @@ function switchMode() {
         if(document.getElementById("home-icon") != null){
             document.getElementById("home-icon").src = "../bilder/home-icon.svg";
         }
-        document.getElementById("modeSwitch").innerHTML = "Switch to Light";
+        document.getElementById("modeSwitch").innerHTML = "Byt till Ljust";
     }
 
     if (document.getElementById("menu-icon").src.split('/')[-1] == "") {
