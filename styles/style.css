@@ -289,7 +289,7 @@ main {
     -webkit-transform: translate(0, 10%);
             transform: translate(0, 10%);
   }
-  .grid-container div::hover h1 {
+  .grid-container div:hover h1 {
     font-size: 1.5em;
   }
   #menu {
