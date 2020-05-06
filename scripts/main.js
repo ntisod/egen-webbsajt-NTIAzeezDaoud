@@ -95,7 +95,13 @@ function switchMode() {
     var menuIconSrc = document.getElementById("menu-icon").src.split('/')
     
     if (menuIconSrc[menuIconSrc.length - 1] == "black.svg") {
-        document.getElementById("menu-icon").src = "../bilder/blue.svg";
+        if(document.getElementsByTagName("title") == "Azeez Daoud - Portfolio"){
+            document.getElementById("menu-icon").src = "./bilder/blue.svg";
+        }
+        else{
+            document.getElementById("menu-icon").src = "../bilder/blue.svg";
+        }
+        
         
         if (document.getElementById("github-icon") != null) {
             document.getElementById("github-icon").src = "../bilder/GitHub-Mark-64px.png";
@@ -106,7 +112,12 @@ function switchMode() {
         document.getElementById("modeSwitch").innerHTML = "Byt till Mörk";
     }
     else{
-        document.getElementById("menu-icon").src = "../bilder/black.svg";
+        if(document.getElementsByTagName("title") == "Azeez Daoud - Portfolio"){
+            document.getElementById("menu-icon").src = "./bilder/black.svg";
+        }
+        else{
+            document.getElementById("menu-icon").src = "../bilder/black.svg";
+        }
         
         if (document.getElementById("github-icon") != null) {
             document.getElementById("github-icon").src = "../bilder/GitHub-Mark-Light-64px.png";
