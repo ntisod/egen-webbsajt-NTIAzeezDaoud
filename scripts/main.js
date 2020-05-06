@@ -36,29 +36,6 @@ var projects = [
     }
 ];
 
-var ommig =[
-    {
-        "name": "Om Mig",
-        "description": "Sidan där jag skriver om mig själv och min interesse.",
-        "path": "./om-mig.html"
-    },
-    {
-        "name": "Musik",
-        "description": "Mina favorit band.",
-        "path": "./musik.html"
-    },
-    {
-        "name": "Anime",
-        "description": "Mina favorit animerade serier.",
-        "path": "./anime.html"
-    },
-    {
-        "name": "Böcker",
-        "description": "Min favorit böcker",
-        "path": "./bocker.html"
-    },
-];
-
 window.onload =()=>{
     document.getElementsByTagName("body")[0].classList.add("darkCon");
     document.getElementsByTagName("header")[0].classList.add("lightCon");
