@@ -95,7 +95,7 @@ function switchMode() {
     var menuIconSrc = document.getElementById("menu-icon").src.split('/')
     
     if (menuIconSrc[menuIconSrc.length - 1] == "black.svg") {
-        if(document.getElementsByTagName("title") == "Azeez Daoud - Portfolio"){
+        if(document.getElementsByTagName("title")[0].innerHTML == "Azeez Daoud - Portfolio"){
             document.getElementById("menu-icon").src = "./bilder/blue.svg";
         }
         else{
@@ -112,7 +112,7 @@ function switchMode() {
         document.getElementById("modeSwitch").innerHTML = "Byt till Mörk";
     }
     else{
-        if(document.getElementsByTagName("title") == "Azeez Daoud - Portfolio"){
+        if(document.getElementsByTagName("title")[0].innerHTML == "Azeez Daoud - Portfolio"){
             document.getElementById("menu-icon").src = "./bilder/black.svg";
         }
         else{
